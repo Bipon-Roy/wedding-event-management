@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import userInitial from "../../../assets/user.png";
-import logo from "../../../assets/logo.png";
+import "./Navbar.css";
 const Navbar = () => {
     const links = (
         <>
@@ -11,7 +11,7 @@ const Navbar = () => {
                 <NavLink to="/about">About</NavLink>
             </li>
             <li className="mr-5 font-semibold">
-                <NavLink to="/portfolio">Career</NavLink>
+                <NavLink to="/gallery">Gallery</NavLink>
             </li>
             <li className="mr-5 font-semibold">
                 <NavLink to="/login">Sign In</NavLink>
@@ -19,8 +19,8 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="max-w-7xl mx-auto">
-            <div className="navbar">
+        <div className="bg-transparent">
+            <nav className="navbar max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <img src={logo} className="" alt="" />
+                    <h1 className="font-semibold text-lg">Elegant Wedding </h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className=" menu-horizontal px-1">{links}</ul>
@@ -55,9 +55,14 @@ const Navbar = () => {
                     <div className="w-10 rounded-full mr-5">
                         <img src={userInitial} />
                     </div>
-                    <a className="btn">Login</a>
+                    <Link
+                        to="/login"
+                        className="px-6 border border-black py-2 rounded-md font-bold"
+                    >
+                        Login
+                    </Link>
                 </div>
-            </div>
+            </nav>
         </div>
     );
 };

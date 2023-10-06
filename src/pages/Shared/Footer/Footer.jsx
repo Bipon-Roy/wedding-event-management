@@ -7,9 +7,7 @@ const Footer = () => {
 
             <NavLink to="/about">About</NavLink>
 
-            <NavLink to="/portfolio">Career</NavLink>
-
-            <NavLink to="/login">Sign In</NavLink>
+            <NavLink to="/portfolio">Gallery</NavLink>
         </>
     );
     return (
