@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineGithub } from "react-icons/ai";
 import { useContext } from "react";
@@ -7,7 +7,7 @@ import swal from "sweetalert";
 
 const Login = () => {
     const { logIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
-
+    const route = useNavigate();
     const handleLogin = (e) => {
         e.preventDefault();
 
@@ -19,6 +19,7 @@ const Login = () => {
             .then((result) => {
                 console.log(result.user);
                 swal("Welcome!", "Login Successful!", "success");
+                route("/");
             })
             .catch((error) => {
                 console.error(error);
