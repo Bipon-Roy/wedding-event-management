@@ -1,0 +1,126 @@
+[
+    {
+        "id": 1,
+        "name": "Wedding Planning",
+        "image": "https://i.ibb.co/x3VSz1J/1-min.jpg",
+        "price": "$5,000 - $10,000",
+        "shortDescription": "Comprehensive wedding planning services.",
+        "detailedDescription": "Let our expert wedding planners take care of every detail, from venue selection to coordinating vendors and managing your budget. We'll bring your vision to life and ensure a stress-free wedding day.",
+        "cardBackground": "#FFE6E6",
+        "serviceImage": "https://i.ibb.co/tB45P4G/1.jpg",
+        "duration": "4-6 months",
+        "includedServices": [
+            "Vendor Coordination",
+            "Budget Management",
+            "Theme Design",
+            "Guest List Management"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Venue Decoration",
+        "image": "https://i.ibb.co/LC25V4m/2-min.jpg",
+        "price": "$1,500 - $3,000",
+        "shortDescription": "Transform your venue into a fairytale setting.",
+        "detailedDescription": "Our creative decorators will turn your chosen venue into a magical space, with stunning floral arrangements, lighting, and decor that matches your theme and style perfectly.",
+        "cardBackground": "#E6F7FF",
+        "serviceImage": "https://i.ibb.co/QCykKSc/2.jpg",
+        "includedServices": [
+            "Floral Arrangements",
+            "Lighting Design",
+            "Table Setup",
+            "Theme Coordination"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Catering Services",
+        "image": "https://i.ibb.co/LdQjrV4/3-min.jpg",
+        "price": "$4,000 - $8,000",
+        "shortDescription": "Delicious cuisine for your special day.",
+        "detailedDescription": "Treat your guests to a memorable dining experience with our top-notch catering services. From appetizers to desserts, our chefs create mouthwatering dishes that will leave a lasting impression.",
+        "cardBackground": "#FFFFCC",
+        "serviceImage": "https://i.ibb.co/sCgPv89/3.jpg",
+        "includedServices": [
+            "Menu Planning",
+            "Food Presentation",
+            "Catering Staff",
+            "Dietary Options"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Photography & Videography",
+        "image": "https://i.ibb.co/R2Mv13F/4-min.jpg",
+        "price": "$2,500 - $5,000",
+        "shortDescription": "Capture every moment beautifully.",
+        "detailedDescription": "Our skilled photographers and videographers will document your wedding day with style and grace. From candid shots to cinematic videos, we'll create lasting memories you can cherish forever.",
+        "cardBackground": "#E6E6E6",
+        "serviceImage": "https://i.ibb.co/YLMrDVB/4.jpg",
+        "includedServices": [
+            "Full-Day Coverage",
+            "Editing and Retouching",
+            "Online Gallery",
+            "Drone Shots (Optional)"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Floral Arrangements",
+        "image": "https://i.ibb.co/8gN3wrd/5-min.jpg",
+        "price": "$800 - $2,000",
+        "shortDescription": "Elegant and stunning floral designs.",
+        "detailedDescription": "Enhance the beauty of your wedding with our exquisite floral arrangements. We create bouquets, centerpieces, and decorations that add a touch of natural beauty to your celebration.",
+        "cardBackground": "#E6F3FF",
+        "serviceImage": "https://i.ibb.co/7bQD0MY/5.jpg",
+        "includedServices": [
+            "Bouquets and Boutonnieres",
+            "Table Centerpieces",
+            "Ceremony Decor",
+            "Delivery and Setup"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Entertainment",
+        "image": "https://i.ibb.co/MMhZr5g/6-min.jpg",
+        "price": "$1,200 - $2,500",
+        "shortDescription": "Keep your guests entertained throughout the event.",
+        "detailedDescription": "From live bands and DJs to photo booths and interactive games, our entertainment options ensure your guests have a fantastic time at your wedding, creating unforgettable moments.",
+        "cardBackground": "#FFE6CC",
+        "serviceImage": "https://i.ibb.co/jZkYw8H/6.jpg",
+        "includedServices": [
+            "Live Bands/DJs",
+            "Photo Booth",
+            "Interactive Games",
+            "Lighting Effects"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Makeup & Hairstyling",
+        "image": "https://i.ibb.co/cvCG4XL/7-min.jpg",
+        "price": "$600 - $1,500",
+        "shortDescription": "Look your best on your special day.",
+        "detailedDescription": "Our professional makeup artists and hairstylists will enhance your natural beauty and create a stunning bridal look that complements your style and personality. You'll shine on your wedding day.",
+        "cardBackground": "#FFD9EB",
+        "serviceImage": "https://i.ibb.co/7GWCdNR/7.jpg",
+        "includedServices": ["Bridal Makeup", "Hairstyling", "Trial Session", "On-site Services"]
+    },
+    {
+        "id": 8,
+        "name": "Transportation",
+        "image": "https://i.ibb.co/JK916SH/8-min.jpg",
+        "price": "$600 - $1,500",
+        "shortDescription": "Arrive in style on your special day.",
+        "detailedDescription": "Choose from a range of transportation options, from classic cars to luxury limousines, to make a grand entrance and exit at your wedding venue. We ensure you arrive in style.",
+        "cardBackground": "#E6CCFF",
+        "serviceImage": "https://i.ibb.co/Y2Nkk6S/8.jpg",
+        "includedServices": [
+            "Vehicle Selection",
+            "Professional Chauffeurs",
+            "Decorations (Optional)",
+            "Timely Arrival"
+        ]
+    }
+]

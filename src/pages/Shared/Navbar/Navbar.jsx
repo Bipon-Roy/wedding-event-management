@@ -14,7 +14,7 @@ const Navbar = () => {
                 <NavLink to="/gallery">Gallery</NavLink>
             </li>
             <li className="mr-5 font-semibold">
-                <NavLink to="/login">Sign In</NavLink>
+                <NavLink to="/register">Register</NavLink>
             </li>
         </>
     );
