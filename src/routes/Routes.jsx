@@ -32,6 +32,7 @@ const routes = createBrowserRouter([
                         <ServiceDetails />
                     </PrivateRoutes>
                 ),
+                loader: () => fetch("/services.json"),
             },
         ],
     },
