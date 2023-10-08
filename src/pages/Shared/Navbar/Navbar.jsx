@@ -3,7 +3,6 @@ import userInitial from "../../../assets/user.png";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
-import swal from "sweetalert";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -12,7 +11,6 @@ const Navbar = () => {
         logOut()
             .then((result) => {
                 console.log(result.user);
-                swal("Done!", "Logout Successful!", "success");
             })
             .catch((error) => {
                 console.error(error);
@@ -28,7 +26,7 @@ const Navbar = () => {
                 <NavLink to="/about">About</NavLink>
             </li>
             <li className="mr-5 font-semibold">
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact">Portfolio</NavLink>
             </li>
             {user && (
                 <>
@@ -45,7 +43,7 @@ const Navbar = () => {
 
     return (
         <div className="">
-            <nav className="navbar max-w-7xl mx-auto px-0">
+            <nav className="navbar max-w-7xl mx-auto pr-6 lg:px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -71,7 +69,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <h1 className="font-semibold text-xl">Elegant Wedding </h1>
+                    <h1 className="font-semibold md:text-xl">Elegant Wedding </h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className=" menu-horizontal px-1">{links}</ul>

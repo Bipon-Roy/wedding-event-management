@@ -8,6 +8,7 @@ import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import Wishlist from "../pages/Wishlist/Wishlist";
 import HotDeals from "../pages/HotDeals/HotDeals";
+import About from "../pages/About/About";
 
 const routes = createBrowserRouter([
     {
@@ -26,6 +27,14 @@ const routes = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register />,
+            },
+            {
+                path: "/about",
+                element: <About />,
+            },
+            {
+                path: "/portfolio",
+                element: <About />,
             },
             {
                 path: "/serviceDetails/:id",
