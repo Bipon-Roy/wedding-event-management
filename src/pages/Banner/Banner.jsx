@@ -11,7 +11,7 @@ const Banner = () => {
         >
             <div className="max-w-7xl mx-auto min-h-[90vh] flex items-center">
                 <div className="w-[400px] bg-white p-6 rounded-md space-y-3 mx-8 mt-72 md:mt-64 lg:m-0">
-                    <h1 className="font-semibold text-2xl md:text-4xl">
+                    <h1 className="font-semibold text-2xl md:text-4xl text-[#C9184A]">
                         Celebrate Love, Plan with Us
                     </h1>
                     <p className="text-gray-600 md:text-xl">

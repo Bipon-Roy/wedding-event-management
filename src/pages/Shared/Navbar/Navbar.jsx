@@ -28,16 +28,20 @@ const Navbar = () => {
                 <NavLink to="/about">About</NavLink>
             </li>
             <li className="mr-5 font-semibold">
-                <NavLink to="/gallery">Gallery</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </li>
-            <li className="mr-5 font-semibold">
-                <NavLink to="/register">Register</NavLink>
-            </li>
+            {user && (
+                <>
+                    <li className="mr-5 font-semibold">
+                        <NavLink to="/Wishlist">Wishlist</NavLink>
+                    </li>
+                </>
+            )}
         </>
     );
 
     return (
-        <div className="bg-[#eff1f3]">
+        <div className="">
             <nav className="navbar max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -64,7 +68,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <h1 className="font-semibold text-lg">Elegant Wedding </h1>
+                    <h1 className="font-semibold text-xl">Elegant Wedding </h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className=" menu-horizontal px-1">{links}</ul>
@@ -99,7 +103,7 @@ const Navbar = () => {
                             >
                                 <li>
                                     <button
-                                        className="px-3 py-2 rounded-md font-bold text-red-700"
+                                        className="px-3 py-2 rounded-md font-bold text-lg text-[#c9184a]"
                                         onClick={handleLogout}
                                     >
                                         Logout

@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { setStorageData } from "../../utility/localStorage";
 
 const ServiceDetails = () => {
     const services = useLoaderData();
@@ -6,11 +7,13 @@ const ServiceDetails = () => {
     const idInt = parseInt(id);
 
     const service = services.find((card) => card.id === idInt);
-    console.log(service.cardBackground);
 
+    const handleWishlist = () => {
+        setStorageData(idInt);
+    };
     return (
         <div className="max-w-7xl mx-auto my-20">
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-6 lg:mx-0">
                 <div className="rounded-xl">
                     <img className="rounded-md" src={service.image} alt={service.name} />
                 </div>
@@ -28,7 +31,10 @@ const ServiceDetails = () => {
                         ))}
                     </ul>
                     <div className="pt-10">
-                        <button className="py-2 bg-[#c9184a] font-medium text-white w-full rounded">
+                        <button
+                            onClick={handleWishlist}
+                            className="py-2 bg-[#c9184a] font-medium text-white w-full rounded"
+                        >
                             Add to Wishlist
                         </button>
                     </div>

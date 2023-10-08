@@ -5,9 +5,7 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <div className="bg-[#eff1f3]">
-                <Service />
-            </div>
+            <Service />
         </div>
     );
 };
