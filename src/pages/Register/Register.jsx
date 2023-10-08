@@ -18,11 +18,11 @@ const Register = () => {
         console.log(name, photoURL, email, password);
 
         createUser(email, password)
-            .then((result) => {
+            .then(() => {
                 handleUpdateProfile(name, photoURL);
-                console.log(result.user);
                 swal("Welcome!", "Registration Successful!", "success");
                 route("/");
+                window.location.reload();
             })
             .catch((error) => {
                 console.error(error);

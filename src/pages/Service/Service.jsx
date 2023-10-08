@@ -15,7 +15,7 @@ const Service = () => {
                 Our <span className="text-[#c9184a]">Services</span>
             </h1>
             <div className="h-[5px] w-24 mt-2 bg-[#c9184a] rounded flex justify-center mx-auto"></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-6 md:mx-8 lg:mx-0 my-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-6 md:mx-8 lg:mx-0 mt-12">
                 {services.map((cards) => (
                     <ServiceCard key={cards.id} cards={cards}></ServiceCard>
                 ))}

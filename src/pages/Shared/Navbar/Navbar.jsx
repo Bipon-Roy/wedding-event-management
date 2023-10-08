@@ -26,7 +26,7 @@ const Navbar = () => {
                 <NavLink to="/about">About</NavLink>
             </li>
             <li className="mr-5 font-semibold">
-                <NavLink to="/contact">Portfolio</NavLink>
+                <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
             {user && (
                 <>
@@ -43,7 +43,7 @@ const Navbar = () => {
 
     return (
         <div className="">
-            <nav className="navbar max-w-7xl mx-auto pr-6 lg:px-0">
+            <nav className="navbar max-w-7xl mx-auto pr-6 lg:px-0 lg:py-4">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -88,28 +88,20 @@ const Navbar = () => {
                     </div>
 
                     {user ? (
-                        <div className="dropdown dropdown-end">
-                            <label tabIndex={0} className="cursor-pointer">
-                                <p className="font-bold">{user.displayName}</p>
-                            </label>
-                            <ul
-                                tabIndex={0}
-                                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#edede9] w-52"
+                        <div className="flex items-center">
+                            <p className="font-bold">{user.displayName}</p>
+
+                            <button
+                                className="px-3 py-2 rounded-md font-bold text-base text-[#c9184a]"
+                                onClick={handleLogout}
                             >
-                                <li>
-                                    <button
-                                        className="px-3 py-2 rounded-md font-bold text-base text-[#c9184a]"
-                                        onClick={handleLogout}
-                                    >
-                                        Logout
-                                    </button>
-                                </li>
-                            </ul>
+                                Logout
+                            </button>
                         </div>
                     ) : (
                         <Link
                             to="/login"
-                            className="px-6 border border-black py-2 rounded-md font-bold"
+                            className="px-5 border-2 border-[#c9184a] py-1 rounded-md font-bold"
                         >
                             Login
                         </Link>

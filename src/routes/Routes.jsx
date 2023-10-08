@@ -9,6 +9,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import Wishlist from "../pages/Wishlist/Wishlist";
 import HotDeals from "../pages/HotDeals/HotDeals";
 import About from "../pages/About/About";
+import Portfolio from "../pages/Portfolio/Portfolio";
 
 const routes = createBrowserRouter([
     {
@@ -34,7 +35,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/portfolio",
-                element: <About />,
+                element: <Portfolio />,
             },
             {
                 path: "/serviceDetails/:id",

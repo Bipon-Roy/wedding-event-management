@@ -14,7 +14,7 @@ const Footer = () => {
                     <NavLink to="/about">About</NavLink>
                 </li>
                 <li className="mr-5 font-semibold">
-                    <NavLink to="/contact">Portfolio</NavLink>
+                    <NavLink to="/portfolio">Portfolio</NavLink>
                 </li>
                 {user && (
                     <>

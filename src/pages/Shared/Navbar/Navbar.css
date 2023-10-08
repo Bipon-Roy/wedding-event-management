@@ -1,5 +1,6 @@
 nav a.active {
-    color: #e01e37;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    background-color: #c9184a;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 5px;
 }
