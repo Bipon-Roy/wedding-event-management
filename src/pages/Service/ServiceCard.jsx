@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ cards }) => {
-    const { name, serviceImage, price, shortDescription, cardBackground } = cards;
+    const { id, name, serviceImage, price, shortDescription, cardBackground } = cards;
 
     const bgColor = {
         backgroundColor: cardBackground,
@@ -24,7 +24,10 @@ const ServiceCard = ({ cards }) => {
                     <p className="text-lg font-bold">{name}</p>
                     <p className="font-semibold rounded-md max-w-fit">{shortDescription}</p>
 
-                    <Link className="w-full bg-[#631a86] text-white text-center py-1 rounded-md mb-1">
+                    <Link
+                        to={`/serviceDetails/${id}`}
+                        className="w-full bg-[#631a86] text-white text-center py-1 rounded-md mb-1"
+                    >
                         Show Details
                     </Link>
                 </div>

@@ -99,7 +99,7 @@ const Navbar = () => {
                             >
                                 <li>
                                     <button
-                                        className="px-3 py-2 rounded-md font-bold"
+                                        className="px-3 py-2 rounded-md font-bold text-red-700"
                                         onClick={handleLogout}
                                     >
                                         Logout
