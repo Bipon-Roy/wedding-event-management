@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Platinum Package",
+        "image": "https://i.ibb.co/t2Z74Pw/gift-svgrepo-com.png",
+        "price": "$6,500",
+        "shortDescription": "The ultimate wedding experience.",
+        "detailedDescription": "Experience a seamless wedding journey with our Platinum Package. It includes comprehensive wedding planning services to bring your vision to life and top-tier photography and videography to capture every cherished moment.",
+        "includedServices": [
+            "Wedding Planning",
+            "Photography & Videography",
+            "Full-Day Coverage",
+            "Editing and Retouching"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Luxury Combo",
+        "image": "https://i.ibb.co/t2Z74Pw/gift-svgrepo-com.png",
+        "price": "$4,500",
+        "shortDescription": "Indulge in luxury dining and arrival.",
+        "detailedDescription": "Treat your guests to a sumptuous dining experience with our Catering Services and arrive at your wedding venue in style with our Transportation options. It's the perfect combination of luxury and convenience.",
+        "includedServices": [
+            "Catering Services",
+            "Transportation",
+            "Menu Planning",
+            "Professional Chauffeurs"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Floral Fantasy",
+        "image": "https://i.ibb.co/t2Z74Pw/gift-svgrepo-com.png",
+        "price": "$2,100",
+        "shortDescription": "Create a floral wonderland for your wedding.",
+        "detailedDescription": "Transform your wedding venue into a floral wonderland with our Venue Decoration and Floral Arrangements package. It includes stunning decor and exquisite floral designs to add natural beauty to your celebration.",
+        "includedServices": [
+            "Venue Decoration",
+            "Floral Arrangements",
+            "Lighting Design",
+            "Bouquets and Boutonnieres"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Entertainment Extravaganza",
+        "image": "https://i.ibb.co/t2Z74Pw/gift-svgrepo-com.png",
+        "price": "$2,000",
+        "shortDescription": "Ensure non-stop fun and a grand entrance.",
+        "detailedDescription": "Keep your guests entertained throughout the event with our Entertainment options and make a grand entrance at your wedding venue with our Transportation services. It's an extravaganza of entertainment and style.",
+        "includedServices": [
+            "Entertainment",
+            "Transportation",
+            "Live Bands/DJs",
+            "Vehicle Selection"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Bridal Beauty",
+        "image": "https://i.ibb.co/t2Z74Pw/gift-svgrepo-com.png",
+        "price": "$3,000",
+        "shortDescription": "Achieve a stunning bridal look and capture it forever.",
+        "detailedDescription": "Enhance your natural beauty with our Makeup & Hairstyling services and have your bridal beauty captured in style with our Photography & Videography. It's the perfect package for a beautiful and lasting memory.",
+        "includedServices": [
+            "Makeup & Hairstyling",
+            "Photography & Videography",
+            "Bridal Makeup",
+            "Full-Day Coverage"
+        ]
+    }
+]

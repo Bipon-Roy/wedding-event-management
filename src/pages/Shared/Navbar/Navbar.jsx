@@ -33,6 +33,9 @@ const Navbar = () => {
             {user && (
                 <>
                     <li className="mr-5 font-semibold">
+                        <NavLink to="/HotDeals">Hot Deals</NavLink>
+                    </li>
+                    <li className="mr-5 font-semibold">
                         <NavLink to="/Wishlist">Wishlist</NavLink>
                     </li>
                 </>
@@ -42,7 +45,7 @@ const Navbar = () => {
 
     return (
         <div className="">
-            <nav className="navbar max-w-7xl mx-auto">
+            <nav className="navbar max-w-7xl mx-auto px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -87,23 +90,17 @@ const Navbar = () => {
                     </div>
 
                     {user ? (
-                        // <div>
-                        //     <div className="dropdown dropdown-end">
-                        //         <p className="font-bold text-[#631A86]">{user.displayName}</p>
-                        //     </div>
-                        //     <button onClick={handleLogout}>Sign Out</button>
-                        // </div>
                         <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="cursor-pointer">
                                 <p className="font-bold">{user.displayName}</p>
                             </label>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#eff1f3] w-52"
+                                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#edede9] w-52"
                             >
                                 <li>
                                     <button
-                                        className="px-3 py-2 rounded-md font-bold text-lg text-[#c9184a]"
+                                        className="px-3 py-2 rounded-md font-bold text-base text-[#c9184a]"
                                         onClick={handleLogout}
                                     >
                                         Logout

@@ -7,6 +7,7 @@ import Register from "../pages/Register/Register";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import Wishlist from "../pages/Wishlist/Wishlist";
+import HotDeals from "../pages/HotDeals/HotDeals";
 
 const routes = createBrowserRouter([
     {
@@ -43,6 +44,14 @@ const routes = createBrowserRouter([
                     </PrivateRoutes>
                 ),
                 loader: () => fetch("/services.json"),
+            },
+            {
+                path: "/HotDeals",
+                element: (
+                    <PrivateRoutes>
+                        <HotDeals />
+                    </PrivateRoutes>
+                ),
             },
         ],
     },
