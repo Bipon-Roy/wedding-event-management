@@ -24,7 +24,8 @@ const Login = () => {
                 swal("Welcome!", "Login Successful!", "success");
             })
             .catch((error) => {
-                console.error(error);
+                console.log(error);
+                swal("Eroor!", error.message, "error");
             });
     };
     const handleSocialSignIn = (method) => {
@@ -84,8 +85,8 @@ const Login = () => {
                     </div>
                 </form>
 
-                <div className="divider font-medium my-4">Social Login</div>
-                <div className="flex justify-between">
+                <div className="divider font-bold my-4">Social Login</div>
+                <div className="flex flex-col gap-4 md:gap-0 md:flex-row justify-between">
                     <button
                         onClick={() => handleSocialSignIn(signInWithGoogle)}
                         className="font-semibold flex gap-4 px-4 py-2 bg-[#0081C9] text-white rounded-3xl items-center"

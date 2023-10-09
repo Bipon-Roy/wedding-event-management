@@ -95,7 +95,7 @@ const Register = () => {
                         </button>
                     </div>
 
-                    <div className="font-medium flex justify-between">
+                    <div className="font-semibold flex justify-between">
                         Already have an account?
                         <Link to="/login" className="underline text-[#e01e37]">
                             Login Here

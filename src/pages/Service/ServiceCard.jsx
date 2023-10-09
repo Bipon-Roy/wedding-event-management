@@ -4,7 +4,7 @@ const ServiceCard = ({ cards }) => {
     const { id, name, image, price, shortDescription } = cards;
 
     return (
-        <div className="shadow-2xl rounded-xl bg-white" data-aos="fade-up">
+        <div className="shadow-2xl rounded-xl bg-white">
             <figure className="relative">
                 <img
                     src={image}
