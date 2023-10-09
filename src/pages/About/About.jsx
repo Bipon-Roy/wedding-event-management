@@ -6,14 +6,17 @@ const About = () => {
             </h1>
             <div className="h-[5px] w-20 mt-2 bg-[#c9184a] rounded flex justify-center mx-auto"></div>
             <div className="grid md:grid-cols-2 gap-6 mt-8 mb-10 mx-5">
-                <div className="border-4 lg:border-8 border-[#c9184a] lg:h-[590px] rounded lg:rounded-xl">
+                <div
+                    className="border-4 lg:border-8 border-[#c9184a] lg:h-[590px] rounded lg:rounded-xl"
+                    data-aos="fade-right"
+                >
                     <img
                         src="https://i.ibb.co/hRYpXYZ/about.jpg"
                         className="h-full w-full lg:rounded"
                         alt="Team Members Photo"
                     />
                 </div>
-                <div className="text-black space-y-4">
+                <div className="text-black space-y-4" data-aos="fade-up">
                     <h1 className="text-2xl font-bold text-[#c9184a] text-center">
                         Our Commitment to Service Quality
                     </h1>

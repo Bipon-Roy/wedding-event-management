@@ -1,11 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineGithub } from "react-icons/ai";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
-
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Login = () => {
+    const [showPassword, setShowPassword] = useState(false);
     const { logIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const route = useNavigate();
     const location = useLocation();
@@ -53,14 +54,20 @@ const Login = () => {
                         />
                     </div>
 
-                    <div className="form-control">
+                    <div className="form-control relative">
                         <input
                             name="password"
-                            type="password"
-                            placeholder="password"
+                            type={showPassword ? "text" : "password"}
+                            placeholder="Password"
                             className="input input-bordered w-full"
                             required
                         />
+                        <span
+                            className="text-lg absolute top-3 right-3"
+                            onClick={() => setShowPassword(!showPassword)}
+                        >
+                            {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                        </span>
                     </div>
 
                     <div className="form-control mt-6">

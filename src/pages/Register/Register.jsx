@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
-
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Register = () => {
+    const [showPassword, setShowPassword] = useState(false);
     const { createUser, handleUpdateProfile } = useContext(AuthContext);
     const route = useNavigate();
     const handleRegister = (e) => {
@@ -16,6 +17,17 @@ const Register = () => {
         const password = formData.get("password");
 
         console.log(name, photoURL, email, password);
+
+        if (password.length < 6) {
+            swal("Error!", "Password Should be at least 6 characters or longer", "error");
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            swal("Error!", "Your password should have at least one Uppercase characters", "error");
+            return;
+        } else if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+            swal("Error!", "Your password should have at least one Special characters", "error");
+            return;
+        }
 
         createUser(email, password)
             .then(() => {
@@ -61,14 +73,20 @@ const Register = () => {
                         />
                     </div>
 
-                    <div className="form-control">
+                    <div className="form-control relative">
                         <input
                             name="password"
-                            type="password"
+                            type={showPassword ? "text" : "password"}
                             placeholder="Password"
                             className="input input-bordered w-full"
                             required
                         />
+                        <span
+                            className="text-lg absolute top-3 right-3"
+                            onClick={() => setShowPassword(!showPassword)}
+                        >
+                            {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                        </span>
                     </div>
 
                     <div className="form-control mt-6">

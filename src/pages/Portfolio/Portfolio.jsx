@@ -19,7 +19,7 @@ const Portfolio = () => {
                 </h1>
                 <div className="h-[5px] w-60 mt-2 b[#c9184a]] rounded flex justify-center mx-auto"></div>
             </div>
-            <div className="my-5">
+            <div className="my-5" data-aos="zoom-in">
                 <Swiper
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -78,7 +78,7 @@ const Portfolio = () => {
             </div>
 
             <div>
-                <div className="flex gap-5 justify-center my-4">
+                <div className="flex gap-5 justify-center my-4" data-aos="fade-up">
                     <div className="bg-[#c9184a] rounded-full ">
                         <button className="p-2 text-white">
                             <FaAngleLeft />

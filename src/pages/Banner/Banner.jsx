@@ -10,8 +10,8 @@ const Banner = () => {
             }}
         >
             <div className="max-w-7xl mx-auto min-h-[90vh] flex items-center justify-center">
-                <div className="text-center space-y-4 w-3/4 text-white">
-                    <h1 className="font-bold text-2xl md:text-5xl">
+                <div className="text-center space-y-4 w-3/4 text-white" data-aos="fade-up">
+                    <h1 className="font-bold text-3xl md:text-5xl">
                         Celebrate Love, <span className="text-[#C9184A]">Plan with Us</span>
                     </h1>
                     <p className=" font-semibold md:text-xl">

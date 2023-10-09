@@ -1,10 +1,7 @@
-/* Add your custom styles for active and inactive slides here */
 .active-slide {
-    /* Styles for active slide */
-    border: 2px solid #c9184a;
+    border: 4px solid #c9184a;
 }
 
 .inactive-slide {
-    /* Styles for inactive slides */
-    opacity: 0.5;
+    opacity: 0.9;
 }

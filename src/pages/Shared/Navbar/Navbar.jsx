@@ -51,7 +51,7 @@ const Navbar = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
                                 fill="none"
-                                viewBox="0 0 24 24"
+                                viewBox="0 0 25 25"
                                 stroke="currentColor"
                             >
                                 <path
@@ -75,7 +75,7 @@ const Navbar = () => {
                     <ul className=" menu-horizontal px-1">{links}</ul>
                 </div>
                 <div className="navbar-end">
-                    <div className="w-10  mr-5">
+                    <div className="w-10 mr-2  md:mr-5">
                         {user ? (
                             <img
                                 className="rounded-full"
@@ -88,11 +88,11 @@ const Navbar = () => {
                     </div>
 
                     {user ? (
-                        <div className="flex items-center">
-                            <p className="font-bold">{user.displayName}</p>
+                        <div className="flex items-center gap-3">
+                            <p className="text-sm md:text-base font-bold">{user.displayName}</p>
 
                             <button
-                                className="px-3 py-2 rounded-md font-bold text-base text-[#c9184a]"
+                                className="md:px-3 md:py-2 rounded-md font-bold text-sm  md:text-base text-[#c9184a]"
                                 onClick={handleLogout}
                             >
                                 Logout
