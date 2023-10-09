@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./Porfolio.css";
+
 import { useRef } from "react";
 
 const Portfolio = () => {
@@ -39,6 +40,7 @@ const Portfolio = () => {
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     className="mySwiper"
                     spaceBetween={10}
+                    loop={true}
                     slidesPerView={3}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log("slide change")}
@@ -64,7 +66,7 @@ const Portfolio = () => {
                     ref={swiperRef}
                 >
                     <SwiperSlide>
-                        <div>
+                        <div className="cursor-pointer">
                             <img
                                 src="https://i.ibb.co/3Bcc5SQ/Portfolio-1.jpg"
                                 alt="Portfolio Image"
@@ -72,7 +74,7 @@ const Portfolio = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className="cursor-pointer">
                             <img
                                 src="https://i.ibb.co/5Y3H9vZ/Portfolio-2.jpg"
                                 alt="Portfolio Image"
@@ -80,7 +82,7 @@ const Portfolio = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className="cursor-pointer">
                             <img
                                 src="https://i.ibb.co/KwZyGch/Portfolio-3.jpg"
                                 alt="Portfolio Image"

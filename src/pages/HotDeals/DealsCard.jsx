@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const DealsCard = ({ deal }) => {
     const { name, image, price, detailedDescription, includedServices } = deal;
     return (
@@ -25,5 +27,7 @@ const DealsCard = ({ deal }) => {
         </div>
     );
 };
-
+DealsCard.propTypes = {
+    deal: PropTypes.object.isRequired,
+};
 export default DealsCard;

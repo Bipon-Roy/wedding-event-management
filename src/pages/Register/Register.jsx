@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
     const { createUser, handleUpdateProfile } = useContext(AuthContext);

@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import userInitial from "../../../assets/user.png";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
@@ -76,14 +75,12 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="w-10 mr-2  md:mr-5">
-                        {user ? (
+                        {user && (
                             <img
                                 className="rounded-full"
                                 src={user.photoURL}
                                 alt={user.displayName}
                             />
-                        ) : (
-                            <img className="rounded-full" src={userInitial} />
                         )}
                     </div>
 

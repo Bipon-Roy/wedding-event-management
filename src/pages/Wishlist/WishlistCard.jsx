@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const WishlistCard = ({ wishlist }) => {
-    const { id, name, price, shortDescription, cardBackground, serviceImage, image } = wishlist;
+    const { id, name, price, shortDescription, image } = wishlist;
 
     return (
         <div className="md:grid grid-cols-2 gap-4 rounded-lg shadow-lg md:shadow-none">
@@ -26,4 +27,7 @@ const WishlistCard = ({ wishlist }) => {
     );
 };
 
+WishlistCard.propTypes = {
+    wishlist: PropTypes.object.isRequired,
+};
 export default WishlistCard;
