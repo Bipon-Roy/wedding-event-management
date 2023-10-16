@@ -66,25 +66,9 @@ const Portfolio = () => {
                     ref={swiperRef}
                 >
                     <SwiperSlide>
-                        <div className="cursor-pointer">
+                        <div>
                             <img
-                                src="https://i.ibb.co/3Bcc5SQ/Portfolio-1.jpg"
-                                alt="Portfolio Image"
-                            />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="cursor-pointer">
-                            <img
-                                src="https://i.ibb.co/5Y3H9vZ/Portfolio-2.jpg"
-                                alt="Portfolio Image"
-                            />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="cursor-pointer">
-                            <img
-                                src="https://i.ibb.co/KwZyGch/Portfolio-3.jpg"
+                                src="https://i.ibb.co/X8PDxnF/Portfolio-1.jpg"
                                 alt="Portfolio Image"
                             />
                         </div>
@@ -92,20 +76,36 @@ const Portfolio = () => {
                     <SwiperSlide>
                         <div>
                             <img
-                                src="https://i.ibb.co/d4ySF2b/Portfolio-4.jpg"
+                                src="https://i.ibb.co/Y8zdVYD/Portfolio-2.jpg"
                                 alt="Portfolio Image"
                             />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
-                            <img src="https://i.ibb.co/wBM7Pm4/1-min.jpg" alt="Portfolio Image" />
+                            <img
+                                src="https://i.ibb.co/BnDSQQB/Portfolio-3.jpg"
+                                alt="Portfolio Image"
+                            />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
                             <img
-                                src="https://i.ibb.co/Cn9FtRB/Portfolio-6.jpg"
+                                src="https://i.ibb.co/Hh7FxQz/Portfolio-4.jpg"
+                                alt="Portfolio Image"
+                            />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div>
+                            <img src="https://i.ibb.co/YDmg2rL/2-min.jpg" alt="Portfolio Image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div>
+                            <img
+                                src="https://i.ibb.co/s33rB72/Portfolio-6.jpg"
                                 alt="Portfolio Image"
                             />
                         </div>

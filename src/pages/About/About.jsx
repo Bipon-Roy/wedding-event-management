@@ -5,13 +5,13 @@ const About = () => {
                 About <span className="text-[#c9184a]">Us</span>
             </h1>
             <div className="h-[5px] w-20 mt-2 bg-[#c9184a] rounded flex justify-center mx-auto"></div>
-            <div className="grid lg:grid-cols-2 gap-6 mt-8 mb-10 mx-5">
+            <div className="grid lg:grid-cols-2 gap-8 mt-8 mb-10 mx-5">
                 <div
-                    className="border-4 lg:border-8 border-[#c9184a] lg:h-[590px] rounded lg:rounded-xl"
+                    className="border-4 lg:border-8 border-[#c9184a] lg:h-[580px] rounded lg:rounded-xl"
                     data-aos="fade-right"
                 >
                     <img
-                        src="https://i.ibb.co/hRYpXYZ/about.jpg"
+                        src="https://i.ibb.co/XW1r2mB/about.jpg"
                         className="h-full w-full lg:rounded"
                         alt="Team Members Photo"
                     />

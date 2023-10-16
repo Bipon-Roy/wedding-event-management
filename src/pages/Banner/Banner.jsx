@@ -3,7 +3,7 @@ const Banner = () => {
         <div
             style={{
                 backgroundImage:
-                    "linear-gradient(rgb(201, 24, 74,0.4), rgba(0, 0, 0, 1)),url(https://i.ibb.co/qMCsR09/hero.jpg)",
+                    "linear-gradient(rgb(201, 24, 74,0.4), rgba(0, 0, 0, 1)),url(https://i.ibb.co/PDS28zr/hero.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
