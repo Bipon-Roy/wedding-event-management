@@ -35,7 +35,6 @@ const Register = () => {
                 handleUpdateProfile(name, photoURL);
                 swal("Welcome!", "Registration Successful!", "success");
                 route("/");
-                window.location.reload();
             })
             .catch((error) => {
                 console.error(error);
